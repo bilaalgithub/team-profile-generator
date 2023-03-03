@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Team Profile Generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilaalgithub/team-profile-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilaalgithub/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/bilaalgithub/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2",
+    "jest": "^29.4.3"
+  }
+}
