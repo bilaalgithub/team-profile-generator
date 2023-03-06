@@ -26,7 +26,7 @@ const appMenu = () => {
 
     // function to create-team //
 
-    function addTeam() {
+    function createTeam() {
         inquirer.prompt([
 
             {
@@ -48,7 +48,7 @@ const appMenu = () => {
 
     // codes to add teams memeber // 
 
-    function addManager() {
+    function createManager() {
         inquirer.prompt([
 
             {
@@ -79,11 +79,11 @@ const appMenu = () => {
             const manager = new manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
             teamMembers.push(manager);
             idList.push(answers.managerId);
-            addTeam();
+            createTeam();
         });
     }
 
-    function addEngineer() {
+    function createEngineer() {
         inquirer.prompt([
                 
             {
@@ -110,14 +110,14 @@ const appMenu = () => {
                 message:"What's the engineer's Github username?",
             }
         ]).then(answers =>{
-            const engineer = new engineer(answer.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
+            const engineer = new engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
             teamMembers.push(engineer);
             idList.push(answers.engineerId);
-            addTeam();
+            createTeam();
         });
     }
 
-    function addIntern() {
+    function createIntern() {
         inquirer.prompt([
             
             {
@@ -147,7 +147,7 @@ const appMenu = () => {
             const intern = new intern( answers.internName, answers.internId, answers.internEmail, answers.internSchool);
             teamMembers.push(intern);
             idList.push(answers.internId);
-            addTeam();
+            createTeam();
         });
     }
 
